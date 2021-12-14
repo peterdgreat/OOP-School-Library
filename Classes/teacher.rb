@@ -1,5 +1,5 @@
-require './Person'
-class Teacher
+require './Classes/person'
+class Teacher < Person
   attr_accessor :specializaation
 
   def initialize(name, age, specializaation)
