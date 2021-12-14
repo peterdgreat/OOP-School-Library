@@ -7,5 +7,3 @@ class Corrector
   @name.length > 10 ?  @name[0..9].capitalize : @name.capitalize
   end
 end
-# correct_1 = Corrector.new("joseph")
-# puts correct_1.correct_name
