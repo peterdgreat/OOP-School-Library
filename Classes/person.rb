@@ -9,7 +9,6 @@ class Person
     @parent_permission = parent_permission
     @id = rand(1..100)
     @corrector = Corrector.new(name)
-
   end
 
   private
@@ -27,6 +26,7 @@ class Person
       false
     end
   end
+
   def validate_name
     @corrector.correct_name
   end

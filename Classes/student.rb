@@ -5,7 +5,7 @@ class Student < Person
 
   def initialize(name, age, classroom)
     @classroom = classroom
-       super(age,name)
+    super(age, name)
   end
 
   def play_hooky
