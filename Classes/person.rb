@@ -31,8 +31,8 @@ class Person
   def validate_name
     @corrector.correct_name
   end
+
   def add_rental(rental)
     @rentals.push(rental)
-    
   end
 end
