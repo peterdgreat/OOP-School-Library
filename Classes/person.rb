@@ -34,5 +34,6 @@ class Person
 
   def add_rental(rental)
     @rentals.push(rental)
+    rentals.person = self
   end
 end
