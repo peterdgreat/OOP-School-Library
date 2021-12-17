@@ -1,8 +1,8 @@
-require './rental'
-require './person'
-require './teacher'
-require './student'
-require './book'
+require_relative './rental'
+require_relative  './person'
+require_relative  './teacher'
+require_relative  './student'
+require_relative  './book'
 
 def list_books(books)
   puts 'List of books:'
