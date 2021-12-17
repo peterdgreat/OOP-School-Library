@@ -1,8 +1,8 @@
 require_relative './rental'
-require_relative  './person'
-require_relative  './teacher'
-require_relative  './student'
-require_relative  './book'
+require_relative './person'
+require_relative './teacher'
+require_relative './student'
+require_relative './book'
 
 def list_books(books)
   puts 'List of books:'
@@ -70,7 +70,7 @@ end
 def list_rentals(people)
   puts 'ID of the person:'
   id = gets.chomp.to_i
-  person = people.find | person | person.id == id
+  person = people.find { |persons| persons.id == id }
   if person
     puts 'List of rentals:'
     person.rentals.each_with_index do |rental, index|
